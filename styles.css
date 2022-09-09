@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+:root{
+    --BodyFont: 'Roboto Mono', monospace;
+    --BodyBG: #000;
+    --BodyFontColor: #fff;
+    --HighlightedTitles: #cdaa7c;
+    --NavBG: #6d5330;
+    --Btnwhats: #25d366;    
+    --BtnwhatsBS: #25d36573;    
+    --SocialHover:  hsl(322deg, 100%, 66%);
+}
+/* Setup */
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--BodyBG);
+    font-family: var(--BodyFont);
+    color: var(--BodyFontColor);
+}
+/* Mobile First Viewport */
+.mainContainer{
+    width: 375px;    
+    margin: 0 auto;          
+}
+/* Navigator Bar */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--NavBG);
+    height: 60px;
+}
+.navBar__MegumiLogo{
+    width: 200px;
+    margin-top: 45px;
+    margin-left: -50px;
+}
+.navBar__anchors{
+    display: flex;
+    font-size: 0.em;
+}
+/* Header section */
+.header{
+    padding: 0 25px;   
+}
+.header_imgCrown{
+    display: block;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+.header__title{
+    text-align: center;
+    font-size: 2em;
+    color: var(--HighlightedTitles);
+    margin-bottom: 25px;
+}
+.header__textDescription{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 65px;
+    font-size: 1.2em;
+}
+.button {
+    width: 250px;    
+    height: 40px;
+    border: none;
+    background-color: var(--Btnwhats);
+    color: var(--BodyFontColor);
+    font-weight: 700;    
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    display: block;  
+}
+.button:hover{
+    cursor: pointer;
+    box-shadow: 3px 7px 7px 7px var(--BtnwhatsBS);
+}
+
+i{
+    font-size: 2em;
+}
+a{
+    color: var(--BodyFontColor);
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} 
+/* cards */
+.cardMobil{
+  width: 340px;
+  height: 500px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px 30px;
+  box-shadow: 5px 10px 10px 10px rgba(245, 246, 247, 0.123);
+  border-radius: 10px;
+  margin-bottom: 70px; 
+  border: 1px solid var(--NavBG);
+}
+.cardMobil:hover{
+    cursor: pointer;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+} 
+/* Alitas Section */
+.alitas__img{
+    width: 320px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.alitas__title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.alitas__ul{
+    margin: 0 -100px;
+    font-weight: 300;
+}
+.alitas__li{
+    line-height: 30px;
+    list-style: none;
+    font-size: 0.65em;
+    padding: 0 25px;   
+}
+/* Sushi Section */ 
+.sushi__img{
+    width: 320px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.sushi__description__title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.sushi__ul{
+    margin: 0 -100px;
+    font-weight: 300;
+}
+.sushi__li{
+    line-height: 25px;
+    list-style: none;
+    font-size: 0.65em;
+    padding: 0 25px;
+}
+/* Yakimeshi Section */
+.yakimeshi__img{
+    width: 320px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.yakimeshi__description__title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.yakimeshi__ul{
+    margin: 0 -100px;
+    font-weight: 300;
+}
+.yakimeshi__li{
+    line-height: 39px;
+    list-style: none;
+    margin-left: 25px;
+    font-size: 0.65em;
+    padding: 0 25px;
+}
+/* Aguachiles Section */
+.aguachile__img{
+    width: 320px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.aguachile__description__title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.aguachile__ul{
+    margin: 0 -100px;
+    font-weight: 300;
+}
+.aguachile__li{
+    line-height: 75px;
+    list-style: none;
+    margin-left: 25px;
+    font-size: 0.65em;
+    padding: 0 40px;
+}
+/* Order via whatsapp*/
+.lilCard{
+    width: 340px;
+    height: 150px;
+    margin: 0 auto;    
+    box-shadow: 5px 10px 10px 10px rgba(245, 246, 247, 0.123);
+    border-radius: 10px;
+    margin-bottom: 50px;     
+    border: 1px solid var(--NavBG);    
+}
+.orderUs__title{ 
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 15px; 
+    margin-bottom: 60px;  
+}
+/* Footer */
+.footer{
+    background-color: var(--BodyFontColor);
+    color: var(--BodyBG);
+    padding: 130px 65px 45px 20px;
+}
+.footer__logo{  
+    width: 350px;        
+    margin-top: -200px;
+    margin-bottom: -150px;
+}
+.footer__textDescription{
+  text-align: center;  
+  margin-left: 40px;
+  font-size: 1em;
+  line-height: 25px;  
+}
+.footer__socialWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100px;
+  margin-left: 40px;  
+}
+.socialIcon{
+    color: var(--BodyBG);
+}
+.footer__socialWrap .socialIcon{
+  border: 1px solid var(--BodyBG);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.footer__socialWrap .socialIcon:hover{
+  cursor: pointer;
+  border-color: var(--SocialHover);
+  color: var(--SocialHover);
+}
+.footer__textDescrition__copyright{
+  font-size: 0.6em;
+  text-align: center;
+  margin-left: 40px;
+} 
+.footer__anchor{
+    text-decoration: none;
+    color: var(--BodyBG);
+}
+/* Medium Viewports */
+@media screen and (min-width: 768px){
+    .mainContainer{
+        width: 650px;    
+        margin: 0 auto;          
+    }   
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--NavBG);
+        height: 70px;      
+    }
+    .navBar__MegumiLogo{
+        width: 300px;
+        margin-top: 65px;
+        margin-left: -80px;
+    }
+    .header__textDescription{
+        font-size: 1.3em;
+    }   
+    .footer__logo{
+        width: 650px;
+        margin-top: -300px;
+        margin-bottom: -300PX;
+    }
+}
+/* Desktop Devices */
+@media screen and (min-width: 1200px){
+    .mainContainer{
+        width: 1200px;    
+        margin: 0 auto;          
+    }
+    /* cards */
+    .cardLargeDevs{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;         
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    padding: 50px 40px 30px;
+    box-shadow: 5px 10px 10px 10px rgba(245, 246, 247, 0.123);
+    border-radius: 10px;
+    margin-bottom: 70px; 
+    border: 1px solid var(--NavBG);    
+    }
+    /* set */   
+    .alitas__img{
+        width:100%;
+        height: 400px;
+    }
+    .alitas__ul{
+       margin-left: 150px;
+    }
+    .alitas__title{
+        font-size: 3em;
+        margin-left: -90px;    
+    }
+    .alitas__li{
+        font-size: 1em;
+        margin-left: -160px;        
+    }
+    .sushi{
+        gap: 100px;
+    }
+    .sushi__img{
+        width:100%;
+        height: 400px;
+    }
+     .sushi__ul{
+       margin-left: 150px;
+    }
+    .sushi__title{
+        font-size: 3em;
+        margin-left: -40px;    
+    }
+    .sushi__li{
+        font-size: 0.95em;
+        margin-left: -210px;
+    } 
+    .yakimeshi{
+        gap: 100px;
+    }
+    .yakimeshi__img{
+        width:100%;
+        height: 400px;
+    }
+    .yakimeshi__ul{
+       margin-left: 30px;
+    }
+    .yakimeshi__title{
+        font-size: 2.7em;
+        margin-left: -30px;    
+    }
+    .yakimeshi__li{
+        font-size: 0.95em;
+        margin-left: -80px;
+    }
+    .aguachile__img{
+        width:100%;
+        height: 400px;
+    }
+    .aguachile__ul{
+       margin-left: 125px;
+    }
+    .aguachile__title{
+        font-size: 2.7em;
+        margin-left: 100px;    
+    }
+    .aguachile__li{
+        font-size: 0.9em;
+        margin-left: -60px;
+    }    
+  
+    .footer__logo{
+        width: 650px;
+        margin-top: -280px;
+        margin-bottom: -300PX;
+        margin-left: 260px;
+    } 
+}
